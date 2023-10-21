@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .first-half {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
+  height: 530px;
   width: 400px;
   background: linear-gradient(180deg, #6543fee1, #352eea);
   border-radius: 20px;
@@ -16,7 +21,7 @@
 .second-half {
   display: flex;
   flex-direction: column;
-  height: 500px;
+  height: 530px;
   width: 400px;
   border: solid rgba(0, 0, 0, 0.062) 2px;
   border-left: none;
@@ -26,6 +31,7 @@
   z-index: 0;
   box-shadow: 0px 10px 20px 1px #b1d4dd86;
   margin-left: 385px;
+  gap: 20px;
 }
 
 .container {
@@ -39,29 +45,178 @@
 
 .button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(180deg, #6643fe, #352eea);
   text-align: center;
   color: white;
-  width: 250px;
-  height: 50px;
+  width: 300px;
+  height: 55px;
   border-radius: 50px;
+  margin-top: 24px;
+  margin-left: 50px;
 }
 
 .summary {
   display: flex;
   align-self: flex-start;
-  font-weight: bold;
-  font-size: larger;
+  font-weight: bolder;
+  font-size: x-large;
+  font-family: "Hanken Grotesk";
   padding-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
 .reaction {
   display: flex;
-  align-content: center;
-  padding-left: 50px;
+  align-items: center;
+  position: relative;
   color: #f32013;
-  background-color: #f0847c73;
-  height: 40px;
+  background-color: #faddda73;
+  height: 60px;
+  width: 300px;
+  padding-left: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.reaction-icon {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.reaction-value {
+  margin-left: 100px;
+  color: rgb(34, 34, 34);
+  font-size: larger;
+}
+
+.reaction-value2 {
+  color: rgb(148, 148, 148);
+}
+
+.div-reaction {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+}
+
+.div-memory {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+}
+
+.memory-value {
+  margin-left: 100px;
+  color: rgb(34, 34, 34);
+  font-size: larger;
+}
+
+.memory-value2 {
+  color: rgb(148, 148, 148);
+}
+
+.memory-icon {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.memory {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #ffa600;
+  background-color: #f8bd502f;
+  height: 60px;
+  width: 300px;
+  padding-left: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.verbal {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #07be8a;
+  background-color: #73e7c62f;
+  height: 60px;
+  width: 300px;
+  padding-left: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.verbal-icon {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.verbal-value2 {
+  color: rgb(148, 148, 148);
+}
+
+.verbal-value {
+  margin-left: 112px;
+  color: rgb(34, 34, 34);
+  font-size: larger;
+}
+
+.div-verbal {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #263ad9;
+  background-color: #929df03f;
+  height: 60px;
+  width: 300px;
+  padding-left: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.visual-icon {
+  position: absolute;
+  z-index: 1;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.visual-value {
+  margin-left: 113px;
+  color: rgb(34, 34, 34);
+  font-size: larger;
+}
+
+.visual-value2 {
+  color: rgb(148, 148, 148);
+}
+
+.div-visual {
+  display: flex;
+  position: relative;
+  padding-left: 50px;
+}
+
+.heading {
+  font-size: x-large;
+  font-weight: bolder;
+  color: #ffffffb9;
+  font-family: "Hanken Grotesk";
+  margin-top: 25px;
 }
